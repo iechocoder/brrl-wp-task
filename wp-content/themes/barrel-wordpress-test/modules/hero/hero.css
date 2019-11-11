@@ -1,0 +1,46 @@
+/* Title */
+h1 {
+  font-size:  70px;
+}
+/* heading */
+h2 {
+  font-size: 35px;
+}
+/* Sub-heading */
+h3 {
+  font-size: 28px;
+}
+
+/* paragraph */
+p {
+  font-size: 16px;
+}
+
+
+.hero {
+  width: 100wh;
+  height: 100vh;
+  font-family: 'Open Sans Regular', open-sans;	
+  background-size: cover;
+  background-position: center;
+  color: black;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.center_content {
+  width: 400px;
+  margin: auto;
+
+}
+
+.below_border {
+  display: flex;
+  background-color: var(--gold);
+  width: 100%;
+  justify-content: center;
+  padding: 7rem 0;
+}

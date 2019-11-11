@@ -1,0 +1,6 @@
+name: barrel-wordpress-test
+recipe: pantheon
+config:
+  framework: wordpress
+  site: barrel-wordpress-test
+  id: 2499cf16-1702-4aa9-b5ac-1b7f3d5d4cff
