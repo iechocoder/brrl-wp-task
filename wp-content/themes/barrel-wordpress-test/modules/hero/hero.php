@@ -3,26 +3,24 @@
 $headline = get_field('index__headline');
 // product Field - ACF
 $product = get_field('index__product');
-
 // get the post contentn
 $content = get_post_field('post_content');
-$class = 'hero_image';
-?>
 
-<section class="hero" data-module="hero">
-  <?php
+?>
+<?php
     $image = get_the_post_thumbnail_url( $post->ID, 'large' );
-    the_module('image', array(
-      'image' => $image,
-      'class' => $class,
-      'id' => $post->ID,
-    ));
-    ?>
-    <div class="center_content">
-      <h1><?php echo $headline; ?></h1>
-      <p><?php echo $content; ?></p>
+?>
+  <section class="hero" style=" background: url(<?php echo $image;?>);background-size:cover;">
+    <div class="container">
+      <div class="hero-text">
+        <div class="text">
+          <h1><?php echo $headline; ?></h1>
+          <p><?php echo $content; ?></p>
+        </div>
+      </div>
+        <?php the_module('two-up'); ?>
     </div>
-</section>
-<div class="below_border"></div>
-<? the_module('two-up'); ?>
+  </section>
+
+
 
